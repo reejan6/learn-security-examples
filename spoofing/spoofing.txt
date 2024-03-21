@@ -1,1 +1,7 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The insecure.js does not prevent the bad actors from retrieving the session data/ hijacking. Therefore, bad actors
+can easily log in/ impersonate the stolen creditial from the stolen session information.
+On the other hand, the secure version, the cookie option has additional setting for the session cookie. This preventing 
+bad actors from easily gaining the session information. Furthermore, post request authenticate the user and if aunthcated
+sends back a success message, otherwise, does not allow permission. 

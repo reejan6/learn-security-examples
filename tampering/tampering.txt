@@ -1,0 +1,8 @@
+Tampering could happen in the insecure.js as the input has not been cleaned as the user could input a script and can get access;
+however, secure.js prevents that by converting the input into a string, also removing the possiblity of submitting script as it 
+disables certain input scripts. 
+
+Tampering violate the integrity property of the CIA, as it changes the input from the user. Since, the tampering changes 
+the input, it does not provide the correct information to the server. This prevent bad actors but still violate the 
+integrity of the question/ purpose. Nevertheless, the protection of the data being used by hackers are more important to
+be prevented than anything else. 

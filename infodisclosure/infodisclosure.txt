@@ -1,3 +1,14 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 Which CIA property does tampering violate?
 What additional security mechanisms can you incorporate?
+
+The vulnerability would occor when untrusted input is used directly in a database query
+similar to NoSQL injection. This happens when proper validation or sanitization of input 
+is not conducted properly. The sure version has tried to mitigate the issue by sanitizing
+the provided input into string and different values so that it could not interact with the
+database and manupulate the data. 
+This type of vulnerability tampers with the integrity aspect of the CIA as it aims to 
+tamper with the data stored in the database. 
+For additional security, we could sanitize the input by parameterizing queries to automatically
+handle input sanitization using database library. Furthermore, using rate limiting which would 
+prevent brute force attacsk or denial-of-service attacks on the authentication endpoints.

@@ -11,7 +11,7 @@ app.use(
     secret: `${secret}`,
     cookie: {
         httpOnly: true,
-        sameSite: true,
+        sameSite: true, //making this two insures that the token can not be stolen.
     },
     resave: false,
     saveUninitialized: false
