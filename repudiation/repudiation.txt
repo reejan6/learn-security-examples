@@ -1,2 +1,8 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+
+The secure version is creating a log file and updating the data to the log file so that it can track. Also,
+there is a middleware function that would assist if something goes wrong with the request.
+
+For extra security mechanism, there has to be a function for an audit trail so that it can be tracked when needed.
