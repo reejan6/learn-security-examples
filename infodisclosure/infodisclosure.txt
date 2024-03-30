@@ -1,3 +1,10 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 Which CIA property does tampering violate?
 What additional security mechanisms can you incorporate?
+
+The bad actor could tamper the input and would result in information disclosure. Therefor, every input that is taken
+needs to be sanitized to prevent any tampering of the data or access to the database. 
+We have sanitized the input and verified that its only a string is inputed. The secure version removes all the non-
+alphanumeric character that is not part of the username has been requested to be removed. 
+It violates confidentiality and integrity. 
+We should hash the password and store it so that it can not be abstracted while in transit either.

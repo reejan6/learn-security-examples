@@ -1,0 +1,3 @@
+Session management must be done so that the bad actor can not get access to the user information for them to 
+change the privelages. Also, if we added another step to authenticate the user before granting permission, so that
+they can not change or get access to the items that are not authorized. 

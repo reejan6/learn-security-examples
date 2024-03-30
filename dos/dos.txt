@@ -1,2 +1,9 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+The secure version has the try and catch block that prevents bad input from bad actors.  
+In context of denial of service, we can make secure.js more secure by adding rate limiting from a user. The middleware 
+could limit the rate of accessing the database so that the database does not get overwhelmed.
+Since, dos affects the process, data flow and data storage in an application. Thus, we need to 
+make sure we do authorization check to prevent any modification of disk or memory to execute
+non-authorized commands.
